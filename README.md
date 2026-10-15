@@ -94,6 +94,5 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/riiddev/farid-crafts/output/pacman-contribution-graph.svg" />
     <img src="https://raw.githubusercontent.com/riiddev/farid-crafts/output/pacman-contribution-graph.svg" alt="Animated Pac-Man GitHub contribution graph" width="100%" />
   </picture>
-  <sub>Pac-Man is chasing the little blocks of progress. Updated automatically by GitHub Actions.</sub>
+  <sub>Pac-Man is chasing the little blocks of progress.. Updated automatically by GitHub Actions.</sub>
 </div>
-.
