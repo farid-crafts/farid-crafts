@@ -1,0 +1,129 @@
+name: Generate pixel ninja companion GIF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ninja-companion.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate animated pixel ninja
+        run: |
+          python -m pip install --quiet pillow
+          mkdir -p dist
+          python - <<'PY'
+          from PIL import Image, ImageDraw
+          import os
+
+          colors = {
+              ".": (0, 0, 0, 0), "#": (5, 8, 15, 255),
+              "h": (25, 36, 59, 255), "s": (11, 17, 32, 255),
+              "w": (218, 230, 248, 255), "p": (228, 185, 164, 255),
+              "b": (53, 169, 255, 255), "n": (20, 31, 50, 255),
+              "c": (38, 54, 78, 255), "a": (39, 125, 202, 255)
+          }
+          base = [
+              "....hhhhhhhhww....", "...hhhhhhhhhhww...", "..hhhhhhhhhhhww...",
+              ".hhhhhhhhhhhhhww..", ".hhhhhhhhhpppww...", "..hhhhpppppppww...",
+              "..hhhpppppppppww..", "..hhppppbpppppww..", "..hhppppbpppppww..",
+              "...hhhpppppppww...", "....hhhhhhhhww....", "...nnnnnnnnnnnn...",
+              "..nnn########nnn..", ".nnnn###nn###nnnn.", ".nnnn########nnn..",
+              "..nnnnnnnnnnnnn...", "...nnnnnnnnnnn....", "..nnngnnnnngnnn...",
+              "..nnnannnnannnn...", "...nnnnn..nnnnn...", "...nnnnn..nnnnn...",
+              "..nnn##....##nnn...", "..nnn##....##nnn...", ".###..........###.."
+          ]
+          def sprite(mirror=False, gait=0, pose="walk"):
+              rows = []
+              for row in base:
+                  row = row[::-1] if mirror else row
+                  offset = (20 - len(row)) // 2
+                  rows.append("." * offset + row + "." * (20 - offset - len(row)))
+              if gait:
+                  changes = ({
+                      18: "..nnnnn...nnnnn...", 19: "..nnnnn...nnnnn...",
+                      20: "..nnnn##...##nnnn..", 21: "..nnnn##...##nnnn..",
+                      22: ".###nn......nn###..", 23: ".###...........###."
+                  } if gait == 1 else {
+                      18: "...nnnn...nnnnn...", 19: "...nnnn...nnnnn...",
+                      20: "...nnn##...##nnn...", 21: "...nnn##...##nnn...",
+                      22: ".###.....nn....###.", 23: ".###.....nn....###."
+                  })
+                  for y, row in changes.items():
+                      row = row[::-1] if mirror else row
+                      off = (20 - len(row)) // 2
+                      rows[y] = "." * off + row + "." * (20 - off - len(row))
+              if pose == "jump":
+                  rows[18:24] = ["..nnnnnnnnnnnn....", "..nnnnnnnnnnnn....",
+                                 "...nnnn....nnnn...", "...nnnn....nnnn...",
+                                 "..nnn##....##nnn..", "..###........###.."]
+                  if mirror:
+                      rows = [r[::-1] for r in rows]
+              elif pose == "crouch":
+                  rows[18:24] = ["...nnnnnnnnnnn....", "..nnnnnnnnnnnnnn..",
+                                 "..nnnnnnnnnnnnnn..", ".nnnnnnnnnnnnnnnn.",
+                                 ".###nnnnnnnnnn###.", ".###..........###."]
+                  if mirror:
+                      rows = [r[::-1] for r in rows]
+              im = Image.new("RGBA", (40, 48), (0, 0, 0, 0))
+              d = ImageDraw.Draw(im)
+              for y, row in enumerate(rows[:24]):
+                  for x, ch in enumerate(row[:20]):
+                      if ch != ".":
+                          d.rectangle((x*2, y*2, x*2+1, y*2+1), fill=colors[ch])
+              return im
+
+          poses = {
+              "idle": sprite(), "walkA": sprite(gait=1), "walkB": sprite(gait=2),
+              "jump": sprite(pose="jump"), "crouch": sprite(pose="crouch"),
+              "walkAL": sprite(mirror=True, gait=1), "walkBL": sprite(mirror=True, gait=2),
+              "jumpL": sprite(mirror=True, pose="jump"), "crouchL": sprite(mirror=True, pose="crouch")
+          }
+          path = [
+              ("idle", 4, 0, 120), ("walkA", 4, 0, 70), ("walkB", 28, 0, 70),
+              ("walkA", 52, 0, 70), ("walkB", 76, 0, 70), ("walkA", 100, 0, 70),
+              ("walkB", 124, 0, 70), ("walkA", 148, 0, 70), ("jump", 172, 7, 75),
+              ("jump", 196, 10, 75), ("crouch", 220, 0, 80), ("idle", 236, 0, 110),
+              ("walkBL", 220, 0, 70), ("walkAL", 192, 0, 70), ("walkBL", 164, 0, 70),
+              ("walkAL", 136, 0, 70), ("walkBL", 108, 0, 70), ("walkAL", 80, 0, 70),
+              ("jumpL", 42, 8, 75), ("crouchL", 16, 0, 80), ("idle", 4, 0, 120)
+          ]
+          frames, durations = [], []
+          for name, x, lift, duration in path:
+              canvas = Image.new("RGBA", (280, 60), (0, 0, 0, 0))
+              character = poses[name]
+              canvas.alpha_composite(character, (x, 57-character.height-lift))
+              frames.append(canvas)
+              durations.append(duration)
+          frames[0].save("dist/ninja-pixel-patrol.gif", save_all=True,
+                         append_images=frames[1:], duration=durations, loop=0,
+                         disposal=2, optimize=True, transparency=0)
+          print("GIF bytes:", os.path.getsize("dist/ninja-pixel-patrol.gif"))
+          PY
+
+      - name: Publish GIF to ninja-assets branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: ninja-assets
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
