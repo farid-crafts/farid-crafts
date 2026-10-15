@@ -49,15 +49,23 @@
   </tr>
 </table>
 
+## // LANGUAGES & TOOLS IN MY PROJECTS
+
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,git,github&theme=dark" alt="HTML, CSS, JavaScript, React, Vite, Git and GitHub" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,vite,git,github&theme=dark" alt="HTML, CSS, JavaScript, TypeScript, React, Vite, Git and GitHub" />
+  <br /><br />
+  <img src="https://img.shields.io/badge/Google_Apps_Script-4285F4?style=flat-square&logo=googleappsscript&logoColor=white" alt="Google Apps Script (.gs)" />
+  <img src="https://img.shields.io/badge/JSON-292929?style=flat-square&logo=json&logoColor=white" alt="JSON configuration files" />
+  <img src="https://img.shields.io/badge/YAML-CC101F?style=flat-square&logo=yaml&logoColor=white" alt="YAML workflow configuration" />
+  <img src="https://img.shields.io/badge/Markdown-20232A?style=flat-square&logo=markdown&logoColor=white" alt="Markdown documentation" />
+  <p><sub>Languages found in the accessible project files, including private repositories: HTML, CSS, JavaScript, TypeScript, and Google Apps Script (.gs). JSON, YAML, and Markdown are included as supporting/configuration formats. React, Vite, GSAP, and Remotion are tools/frameworks rather than separate programming languages.</sub></p>
 </div>
 
-## // STATUS MY SCREEN 
+## // STATUS MY SCREEN
 
 <div align="center">
   <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=farid-crafts&layout=compact&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7" alt="Most used languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=farid-crafts&layout=compact&langs_count=10&size_weight=0.5&count_weight=0.5&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7" alt="Most used languages in public repositories" />
 </div>
 
 <div align="center">
