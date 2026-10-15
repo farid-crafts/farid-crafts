@@ -22,7 +22,7 @@ jobs:
       - name: Generate Pac-Man contribution SVGs
         uses: abozanona/pacman-contribution-graph@main
         with:
-          github_user_name: farid-crafts
+          github_user_name: riiddev
           games: "pacman"
           hide_month_labels: "false"
 
