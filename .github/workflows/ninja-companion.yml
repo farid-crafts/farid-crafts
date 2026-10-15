@@ -29,7 +29,7 @@ jobs:
       - name: Generate animated pixel ninja
         run: |
           python -m pip install --quiet pillow
-          mkdir -p dist
+          mkdir -p assets
           python - <<'PY'
           from PIL import Image, ImageDraw
           import os
@@ -113,17 +113,18 @@ jobs:
               canvas.alpha_composite(character, (x, 57-character.height-lift))
               frames.append(canvas)
               durations.append(duration)
-          frames[0].save("dist/ninja-pixel-patrol.gif", save_all=True,
+          frames[0].save("assets/ninja-pixel-patrol.gif", save_all=True,
                          append_images=frames[1:], duration=durations, loop=0,
                          disposal=2, optimize=True, transparency=0)
-          print("GIF bytes:", os.path.getsize("dist/ninja-pixel-patrol.gif"))
+          print("GIF bytes:", os.path.getsize("assets/ninja-pixel-patrol.gif"))
           PY
 
-      - name: Publish GIF to ninja-assets branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: ninja-assets
-          build_dir: dist
-          keep_history: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit GIF into the profile repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ninja-pixel-patrol.gif
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update animated pixel ninja"
+            git push
+          fi
