@@ -6,7 +6,7 @@
 
 <!-- Animated pixel ninja companion -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/riiddev/farid-crafts/ninja-assets/ninja-pixel-patrol.gif" width="100%" alt="Animated pixel ninja patrol: walking across the profile, jumping, turning around, and running back" />
+  <img src="./assets/ninja-pixel-patrol.gif" width="100%" alt="Animated pixel ninja patrol: walking across the profile, jumping, turning around, and running back" />
 </div>
 
 <table>
