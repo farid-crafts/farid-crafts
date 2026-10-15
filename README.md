@@ -96,16 +96,3 @@
   </picture>
   <sub>Pac-Man is chasing the little blocks of progress. Updated automatically by GitHub Actions.</sub>
 </div>
-
-## // CONTRIBUTION GARDEN
-
-<div align="center">
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Animated 3D GitHub contribution graph" width="100%" />
-  <sub>Little blocks of progress, stacking up over time.</sub>
-</div>
-
-<div align="center">
-  <br />
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=95&section=footer&color=0:0D1118,55:202B3A,100:A9F06D&animation=twinkling" width="100%" alt="" />
-  <sub>still learning. still experimenting. no speedrun required.</sub>
-</div>
