@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import math, os, random
 
-W, H, FRAMES, DURATION, S = 720, 180, 28, 65, 4
+W, H, FRAMES, DURATION, S = 720, 180, 42, 65, 4
 C = {
     "bg0": (4, 8, 19), "bg2": (13, 30, 58), "sil": (11, 24, 45),
     "sil2": (21, 39, 68), "line": (34, 74, 120), "cyan": (53, 169, 255),
@@ -71,7 +71,7 @@ rng = random.Random(2026)
 STREAKS = [(rng.randrange(-100,W+100),rng.randrange(48,148),rng.randrange(12,58),rng.choice([3,4,5,7,9]),rng.choice([C["line"],C["glow"],C["cyan"]]),rng.choice([1,1,2])) for _ in range(46)]
 DUST = [(rng.randrange(W),rng.randrange(120,165),rng.choice([C["cyan"],C["ice"],C["steel"]])) for _ in range(20)]
 
-def runner(frame):
+def runner(frame, jumping=False):
     # A hand-built pixel ninja with side-swept silver hair, blue eye, wind scarf and alternating sprint legs.
     layer = Image.new("RGBA",(112,144),(0,0,0,0)); d=ImageDraw.Draw(layer); s=S
     phase=frame%4
@@ -84,8 +84,15 @@ def runner(frame):
     poly([(12,16),(8,17),(4,15),(0,17),(4,19),(8,20),(2,22),(7,23),(13,21),(15,18)],C["cloth"])
     poly([(11,17),(7,18),(3,17),(7,20),(3,21),(8,21),(14,19)],C["cloth3"])
     poly([(10,18+tail),(6,19+tail),(2,18+tail)],C["cyan"])
-    # Two distinct stride poses; boots and knees are kept blocky and readable
-    if phase in (0,1):
+    # Sprinting stride switches to a compact airborne tuck during occasional jumps.
+    if jumping:
+        poly([(11,25),(15,24),(18,26),(17,29),(14,30),(12,28)],C["cloth2"])
+        poly([(15,28),(19,28),(21,30),(20,32),(16,32),(14,30)],C["cloth"])
+        box(18,31,22,33,C["steel"])
+        poly([(10,25),(13,24),(14,27),(12,29),(9,30),(7,28)],C["cloth2"])
+        poly([(8,28),(11,28),(12,30),(9,32),(6,31),(6,29)],C["cloth"])
+        box(6,30,10,32,C["steel"])
+    elif phase in (0,1):
         poly([(11,26),(15,26),(15,29),(12,31),(8,32),(5,31),(8,28)],C["cloth2"])
         poly([(7,30),(10,31),(7,34),(2,34),(2,32),(5,32)],C["cloth"])
         box(2,33,8,35,C["cloth"]); box(2,33,6,34,C["cloth3"])
@@ -106,8 +113,13 @@ def runner(frame):
     poly([(18,18),(22,19),(25,21),(24,24),(21,25),(19,22)],C["cloth2"])
     box(13,20,17,25,C["cloth"]); box(14,22,16,23,C["steel"]); box(14,22,15,23,C["cyan"])
     line([(8,19),(4,27)],C["steel"]); line([(7,19),(3,26)],C["ice"])
-    # Sprinting arm pump alternates with the legs
-    if phase in (0,1):
+    # Arms pump while running; on a leap the lead arm rises into the air.
+    if jumping:
+        poly([(18,19),(21,17),(23,14),(25,12),(26,13),(24,17),(22,21),(20,23)],C["cloth2"])
+        box(24,11,27,14,C["cloth"]); box(25,11,27,12,C["steel"])
+        poly([(10,20),(8,20),(6,22),(5,24),(7,25),(10,23)],C["cloth2"])
+        box(4,23,7,26,C["cloth"])
+    elif phase in (0,1):
         poly([(18,19),(21,19),(24,21),(25,23),(23,25),(20,23),(18,22)],C["cloth2"])
         box(23,22,26,25,C["cloth"]); box(24,23,26,24,C["steel"])
         poly([(10,20),(8,20),(6,22),(5,24),(7,25),(10,23)],C["cloth2"]); box(4,23,7,26,C["cloth"])
@@ -149,13 +161,28 @@ def make_frame(frame):
     for i,(x,y,col) in enumerate(DUST):
         xx=(x-frame*(2+i%4))%W; yy=y-(5 if (frame+i)%5==0 else 0)
         if frame%3: d.rectangle((xx,yy,xx+2,yy+2),fill=col)
-    d.ellipse((270,145,432,159),fill=(7,35,65)); d.ellipse((294,148,411,156),fill=(15,67,111))
+    # Compress the ground shadow while airborne so the jump reads clearly.
+    jump_lift = {17:5, 18:12, 19:18, 20:15, 21:8}.get(frame, 0)
+    if jump_lift:
+        d.ellipse((300,146,417,158),fill=(7,27,50))
+        d.ellipse((328,150,389,155),fill=(12,48,80))
+        d.ellipse((302,150,415,158),outline=(26,105,178),width=1)
+    else:
+        d.ellipse((270,145,432,159),fill=(7,35,65)); d.ellipse((294,148,411,156),fill=(15,67,111))
     # Blue afterimage trail gives the runner a sense of acceleration.
     for j,alpha_col in [(1,(16,47,83)),(2,(12,31,59))]:
         x0=294-j*15-(frame%3)*2
         d.polygon([(x0+44,69),(x0+72,73),(x0+59,78),(x0+29,77)],fill=alpha_col)
         d.rectangle((x0+8,100+j*4,x0+38,102+j*4),fill=alpha_col)
-    im.paste(runner(frame),(294,8),runner(frame))
+    jumping = frame in (17,18,19,20,21)
+    lift = {17:5, 18:12, 19:18, 20:15, 21:8}.get(frame, 0)
+    ninja = runner(frame, jumping=jumping)
+    im.paste(ninja,(294,8-lift),ninja)
+    if jumping:
+        # Lift-off sparks and a cyan arc trail appear for a few frames only.
+        d.arc((322,74-lift,406,126-lift), 190, 345, fill=(76,190,255), width=2)
+        d.rectangle((300,132-lift,312,134-lift),fill=(78,197,255))
+        d.rectangle((307,125-lift,316,127-lift),fill=(34,130,232))
     d=ImageDraw.Draw(im)
     d.text((14,25),"RUN LOOP / ACTIVE",font=TINY,fill=(73,128,189))
     d.rectangle((W-58,23,W-14,26),fill=(16,35,60))
