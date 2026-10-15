@@ -78,11 +78,8 @@ A neubrutalist portfolio experiment with live GitHub data, theme switching, and 
 ## The contribution garden
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated snake moving through the GitHub contribution grid" src="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
+  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Animated 3D GitHub contribution graph" width="100%" />
+  <sub>A 3D view of my GitHub activity, refreshed automatically every day.</sub>
 </div>
 
 <div align="center">
