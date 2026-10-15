@@ -1,46 +1,50 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:171717,55:252525,100:D8FF3E&text=Riddev&fontColor=F8F7F2&fontSize=58&fontAlignY=38&desc=learning%20by%20building&descAlignY=60&descSize=16&animation=fadeIn" width="100%" alt="Riddev — learning by building" />
-
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=900&color=D8FF3E&center=true&vCenter=true&width=680&lines=I%27m+here+to+learn%2C+not+to+pretend+I+know+it+all.;Exploring+frontend+design+and+development.;Currently+learning+what+happens+behind+the+UI." alt="Animated intro" />
-
+  <img src="./assets/pixel-header.svg" width="100%" alt="Riddev — cozy pixel mode, learning by building" />
   <br />
-
-  <a href="https://github.com/farid-crafts?tab=repositories"><img src="https://img.shields.io/badge/Repositories-Explore-171717?style=flat-square&logo=github&logoColor=white" alt="Explore repositories" /></a>
-  <a href="https://farid-crafts.github.io/portooo/"><img src="https://img.shields.io/badge/Portfolio-Visit-D8FF3E?style=flat-square&labelColor=171717" alt="Portfolio" /></a>
-  <a href="https://open.spotify.com/playlist/5Qn9lmfjJ6KMuYl0jTIbkO?si=37d517eaa993488c"><img src="https://img.shields.io/badge/Spotify-What%20I'm%20listening%20to-1DB954?style=flat-square&logo=spotify&logoColor=white" alt="Open my Spotify playlist" /></a>
+  <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&weight=400&size=10&duration=3200&pause=900&color=A9F06D&center=true&vCenter=true&width=720&height=54&lines=FRONTEND+IN+PROGRESS...;BACKEND+IS+THE+NEXT+LEVEL;NO+RUSH.+JUST+KEEP+BUILDING." alt="Animated pixel-style intro" />
 </div>
+
+<table>
+  <tr>
+    <td width="62%" valign="middle">
+      <h2>PLAYER 01 // ABOUT ME</h2>
+      <p>Hey, I'm Riddev. I'm not an expert, and I'm not trying to act like one. I just like learning new things, trying them out, and seeing what I can make.</p>
+      <p>These days I'm mostly into <strong>web design and frontend development</strong> — the little details, smooth interactions, and making a page feel good to use. I'm also starting to explore <strong>backend development</strong>, one level at a time.</p>
+      <p><sub>Current mood: curious, a little pixelated, and taking it one step at a time.</sub></p>
+      <a href="https://github.com/farid-crafts?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-LOOK_AROUND-202B3A?style=flat-square&logo=github&logoColor=EAF2DE&labelColor=0D1118" alt="Explore repositories" /></a>
+      <a href="https://farid-crafts.github.io/portooo/"><img src="https://img.shields.io/badge/PORTFOLIO-TAKE_A_LOOK-A9F06D?style=flat-square&labelColor=202B3A" alt="Visit portfolio" /></a>
+    </td>
+    <td width="38%" align="center" valign="middle">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdteGZwa2ZzMXZzNWxkZW54cDFmanljNW91cGUxaGw0NWxjMXdjMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YfIqRqgD6HxsPTIwfg/giphy.gif" width="240" alt="A little animated GIF to set the mood" />
+      <br />
+      <sub>just vibing while the code loads</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## A little about me
-
-I'm not an expert, and I'm not trying to present myself as one. I'm someone who likes learning new things, trying them out, and slowly understanding how they work.
-
-Lately, most of my attention has been on **web design and frontend development**: how a page feels, how its details fit together, and how small interactions can make an interface more enjoyable to use. I'm also starting to dig deeper into **backend development** so I can understand more of what happens beyond the screen.
-
-I still have plenty to learn. That's the point.
-
-## What I'm exploring
+## [01] INVENTORY // WHAT I'M EXPLORING
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <strong>Frontend & interface design</strong><br />
-      Layout, typography, responsive design, interaction details, and motion that has a reason to be there.
+      <h3>01 — Frontend & UI</h3>
+      Layout, typography, responsive design, interaction details, and motion that feels intentional.
     </td>
     <td width="50%" valign="top">
-      <strong>Backend fundamentals</strong><br />
-      Learning how applications handle data, connect services, and work behind the interface.
+      <h3>02 — Backend basics</h3>
+      Learning how apps handle data, connect services, and work behind the interface.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <strong>Learning by building</strong><br />
-      Trying ideas in small projects, finding what breaks, and improving them as I understand more.
+      <h3>03 — Build, break, repeat</h3>
+      Trying ideas in projects, finding what breaks, and improving them as I learn.
     </td>
     <td width="50%" valign="top">
-      <strong>Design & motion</strong><br />
-      Interested in expressive UI, thoughtful transitions, and interfaces that feel considered rather than overdone.
+      <h3>04 — Pixel & motion</h3>
+      Into expressive interfaces, playful motion, and small details that give a project personality.
     </td>
   </tr>
 </table>
@@ -49,41 +53,41 @@ I still have plenty to learn. That's the point.
   <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,git,github&theme=dark" alt="HTML, CSS, JavaScript, React, Vite, Git and GitHub" />
 </div>
 
-## A project I'm working on
+## [02] QUEST LOG // A PROJECT
 
 <a href="https://github.com/farid-crafts/portooo"><strong>Portooo — interactive portfolio</strong></a>
 
 A neubrutalist portfolio experiment with live GitHub data, theme switching, and an animated mascot. I'm using it to explore frontend structure, motion, and how a small visual idea can become an interactive experience.
 
-## My GitHub, lately
+## [03] STATUS SCREEN // GITHUB
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0d1117&title_color=D8FF3E&text_color=F0F0F0&icon_color=D8FF3E&rank_icon=github" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=farid-crafts&layout=compact&hide_border=true&bg_color=0d1117&title_color=D8FF3E&text_color=F0F0F0" alt="Most used languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=farid-crafts&layout=compact&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7" alt="Most used languages" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=farid-crafts&hide_border=true&background=0D1117&ring=D8FF3E&fire=D8FF3E&currStreakLabel=D8FF3E&sideLabels=F0F0F0&dates=8B949E&currStreakNum=F0F0F0&sideNums=F0F0F0" alt="GitHub contribution streak" width="70%" />
+  <img src="https://streak-stats.demolab.com?user=farid-crafts&hide_border=true&background=0D1118&ring=A9F06D&fire=BBA9FF&currStreakLabel=A9F06D&sideLabels=EAF0F7&dates=8E9AAB&currStreakNum=EAF0F7&sideNums=EAF0F7" alt="GitHub contribution streak" width="70%" />
 </div>
 
-## Currently on repeat
+## [04] SOUNDTRACK // ON REPEAT
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/5Qn9lmfjJ6KMuYl0jTIbkO?si=37d517eaa993488c">
-    <img src="https://img.shields.io/badge/PLAYLIST-Listen%20on%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Listen to my Spotify playlist" />
+    <img src="./assets/pixel-spotify-player.svg" width="100%" alt="Animated pixel-style Spotify playlist player — click to open the playlist" />
   </a>
-  <p><sub>A little soundtrack for learning, designing, and figuring things out.</sub></p>
+  <p><sub>A little soundtrack for learning, designing, and figuring things out. Click the player to open the playlist on Spotify.</sub></p>
 </div>
 
-## The contribution garden
+## [05] CONTRIBUTION GARDEN
 
 <div align="center">
   <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Animated 3D GitHub contribution graph" width="100%" />
-  <sub>A 3D view of my GitHub activity, refreshed automatically every day.</sub>
+  <sub>Little blocks of progress, stacking up over time.</sub>
 </div>
 
 <div align="center">
-  <sub>Still learning. Still experimenting. One project at a time.</sub>
   <br />
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:171717,100:D8FF3E" width="100%" alt="" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=95&section=footer&color=0:0D1118,55:202B3A,100:A9F06D&animation=twinkling" width="100%" alt="" />
+  <sub>still learning. still experimenting. no speedrun required.</sub>
 </div>
