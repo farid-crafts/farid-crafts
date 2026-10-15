@@ -96,3 +96,4 @@
   </picture>
   <sub>Pac-Man is chasing the little blocks of progress. Updated automatically by GitHub Actions.</sub>
 </div>
+.
