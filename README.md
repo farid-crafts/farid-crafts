@@ -6,7 +6,7 @@
 
 <!-- Animated pixel ninja companion -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/farid-crafts/farid-crafts/ninja-assets/ninja-pixel-patrol.gif" width="100%" alt="Animated pixel ninja patrol: walking across the profile, jumping, turning around, and running back" />
+  <img src="https://raw.githubusercontent.com/riiddev/farid-crafts/ninja-assets/ninja-pixel-patrol.gif" width="100%" alt="Animated pixel ninja patrol: walking across the profile, jumping, turning around, and running back" />
 </div>
 
 <table>
@@ -16,8 +16,8 @@
       <p>Hey, I'm Riddev. I'm not an expert, and I'm not trying to act like one. I just like learning new things, trying them out, and seeing what I can make.</p>
       <p>These days I'm mostly into <strong>web design and frontend development</strong> — the little details, smooth interactions, and making a page feel good to use. I'm also starting to explore <strong>backend development</strong>, one level at a time.</p>
       <p><sub>Current mood: curious, a little pixelated, and taking it one step at a time.</sub></p>
-      <a href="https://github.com/farid-crafts?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-LOOK_AROUND-202B3A?style=flat-square&logo=github&logoColor=EAF2DE&labelColor=0D1118" alt="Explore repositories" /></a>
-      <a href="https://farid-crafts.github.io/portooo/"><img src="https://img.shields.io/badge/PORTFOLIO-TAKE_A_LOOK-A9F06D?style=flat-square&labelColor=202B3A" alt="Visit portfolio" /></a>
+      <a href="https://github.com/riiddev?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-LOOK_AROUND-202B3A?style=flat-square&logo=github&logoColor=EAF2DE&labelColor=0D1118" alt="Explore repositories" /></a>
+      <a href="https://riiddev.github.io/portooo/"><img src="https://img.shields.io/badge/PORTFOLIO-TAKE_A_LOOK-A9F06D?style=flat-square&labelColor=202B3A" alt="Visit portfolio" /></a>
     </td>
     <td width="38%" align="center" valign="middle">
       <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdteGZwa2ZzMXZzNWxkZW54cDFmanljNW91cGUxaGw0NWxjMXdjMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YfIqRqgD6HxsPTIwfg/giphy.gif" width="240" alt="A little animated GIF to set the mood" />
@@ -69,12 +69,12 @@
 ## // STATUS MY SCREEN
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=farid-crafts&layout=compact&langs_count=10&size_weight=0.5&count_weight=0.5&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7" alt="Most used languages in public repositories" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=riiddev&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=riiddev&layout=compact&langs_count=10&size_weight=0.5&count_weight=0.5&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7" alt="Most used languages in public repositories" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=farid-crafts&hide_border=true&background=0D1118&ring=A9F06D&fire=BBA9FF&currStreakLabel=A9F06D&sideLabels=EAF0F7&dates=8E9AAB&currStreakNum=EAF0F7&sideNums=EAF0F7" alt="GitHub contribution streak" width="70%" />
+  <img src="https://streak-stats.demolab.com?user=riiddev&hide_border=true&background=0D1118&ring=A9F06D&fire=BBA9FF&currStreakLabel=A9F06D&sideLabels=EAF0F7&dates=8E9AAB&currStreakNum=EAF0F7&sideNums=EAF0F7" alt="GitHub contribution streak" width="70%" />
 </div>
 
 ## // SOUNDTRACK & ON REPEAT
@@ -90,9 +90,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph.svg" alt="Animated Pac-Man GitHub contribution graph" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/riiddev/farid-crafts/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/riiddev/farid-crafts/output/pacman-contribution-graph.svg" />
+    <img src="https://raw.githubusercontent.com/riiddev/farid-crafts/output/pacman-contribution-graph.svg" alt="Animated Pac-Man GitHub contribution graph" width="100%" />
   </picture>
   <sub>Pac-Man is chasing the little blocks of progress. Updated automatically by GitHub Actions.</sub>
 </div>
