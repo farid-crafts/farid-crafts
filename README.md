@@ -53,13 +53,7 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,git,github&theme=dark" alt="HTML, CSS, JavaScript, React, Vite, Git and GitHub" />
 </div>
 
-## [02] QUEST LOG // A PROJECT
-
-<a href="https://github.com/farid-crafts/portooo"><strong>Portooo — interactive portfolio</strong></a>
-
-A neubrutalist portfolio experiment with live GitHub data, theme switching, and an animated mascot. I'm using it to explore frontend structure, motion, and how a small visual idea can become an interactive experience.
-
-## [03] STATUS SCREEN // GITHUB
+## [02] STATUS SCREEN // GITHUB
 
 <div align="center">
   <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
