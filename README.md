@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/pixel-header.svg" width="100%" alt="Riddev — cozy pixel mode, learning by building" />
+  <img src="./assets/pixel-header.svg" width="100%" alt="Riiddev — cozy pixel mode, learning by building" />
   <br />
   <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&weight=400&size=10&duration=3200&pause=900&color=A9F06D&center=true&vCenter=true&width=720&height=54&lines=FRONTEND+IN+PROGRESS...;BACKEND+IS+THE+NEXT+LEVEL;NO+RUSH.+JUST+KEEP+BUILDING." alt="Animated pixel-style intro" />
 </div>
@@ -13,7 +13,7 @@
   <tr>
     <td width="62%" valign="middle">
       <h2>// ABOUT ME</h2>
-      <p>Hey, I'm Riddev. I'm not an expert, and I'm not trying to act like one. I just like learning new things, trying them out, and seeing what I can make.</p>
+      <p>Hey, I'm Riiddev. I'm not an expert, and I'm not trying to act like one. I just like learning new things, trying them out, and seeing what I can make.</p>
       <p>These days I'm mostly into <strong>web design and frontend development</strong> — the little details, smooth interactions, and making a page feel good to use. I'm also starting to explore <strong>backend development</strong>, one level at a time.</p>
       <p><sub>Current mood: curious, a little pixelated, and taking it one step at a time.</sub></p>
       <a href="https://github.com/riiddev?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-LOOK_AROUND-202B3A?style=flat-square&logo=github&logoColor=EAF2DE&labelColor=0D1118" alt="Explore repositories" /></a>
