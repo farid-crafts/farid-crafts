@@ -81,6 +81,17 @@
   <p><sub>A little soundtrack for learning, designing, and figuring things out. Click the player to open the playlist on Spotify.</sub></p>
 </div>
 
+## // PAC-MAN ARCADE
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph.svg" />
+    <img src="https://raw.githubusercontent.com/farid-crafts/farid-crafts/output/pacman-contribution-graph.svg" alt="Animated Pac-Man GitHub contribution graph" width="100%" />
+  </picture>
+  <sub>Pac-Man is chasing the little blocks of progress. Updated automatically by GitHub Actions.</sub>
+</div>
+
 ## // CONTRIBUTION GARDEN
 
 <div align="center">
