@@ -126,5 +126,6 @@ jobs:
           git add assets/ninja-pixel-patrol.gif
           if ! git diff --cached --quiet; then
             git commit -m "chore: update animated pixel ninja"
+            git pull --rebase origin main
             git push
           fi
