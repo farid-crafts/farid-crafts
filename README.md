@@ -7,7 +7,7 @@
 <table>
   <tr>
     <td width="62%" valign="middle">
-      <h2>PLAYER 01 // ABOUT ME</h2>
+      <h2>// ABOUT ME</h2>
       <p>Hey, I'm Riddev. I'm not an expert, and I'm not trying to act like one. I just like learning new things, trying them out, and seeing what I can make.</p>
       <p>These days I'm mostly into <strong>web design and frontend development</strong> — the little details, smooth interactions, and making a page feel good to use. I'm also starting to explore <strong>backend development</strong>, one level at a time.</p>
       <p><sub>Current mood: curious, a little pixelated, and taking it one step at a time.</sub></p>
@@ -24,7 +24,7 @@
 
 ---
 
-## [01] INVENTORY // WHAT I'M EXPLORING
+## // WHAT I'M EXPLORING
 
 <table>
   <tr>
@@ -53,7 +53,7 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,git,github&theme=dark" alt="HTML, CSS, JavaScript, React, Vite, Git and GitHub" />
 </div>
 
-## [02] STATUS SCREEN // GITHUB
+## // STATUS MY SCREEN 
 
 <div align="center">
   <img height="160" src="https://github-readme-stats.vercel.app/api?username=farid-crafts&show_icons=true&hide_border=true&bg_color=0D1118&title_color=A9F06D&text_color=EAF0F7&icon_color=BBA9FF&rank_icon=github" alt="GitHub stats" />
@@ -64,7 +64,7 @@
   <img src="https://streak-stats.demolab.com?user=farid-crafts&hide_border=true&background=0D1118&ring=A9F06D&fire=BBA9FF&currStreakLabel=A9F06D&sideLabels=EAF0F7&dates=8E9AAB&currStreakNum=EAF0F7&sideNums=EAF0F7" alt="GitHub contribution streak" width="70%" />
 </div>
 
-## [04] SOUNDTRACK // ON REPEAT
+## // SOUNDTRACK & ON REPEAT
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/5Qn9lmfjJ6KMuYl0jTIbkO?si=37d517eaa993488c">
@@ -73,7 +73,7 @@
   <p><sub>A little soundtrack for learning, designing, and figuring things out. Click the player to open the playlist on Spotify.</sub></p>
 </div>
 
-## [05] CONTRIBUTION GARDEN
+## // CONTRIBUTION GARDEN
 
 <div align="center">
   <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Animated 3D GitHub contribution graph" width="100%" />
