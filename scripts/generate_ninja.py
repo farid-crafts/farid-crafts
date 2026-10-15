@@ -69,7 +69,7 @@ def background():
 BG = background()
 rng = random.Random(2026)
 STREAKS = [(rng.randrange(-100,W+100),rng.randrange(48,148),rng.randrange(12,58),rng.choice([3,4,5,7,9]),rng.choice([C["line"],C["glow"],C["cyan"]]),rng.choice([1,1,2])) for _ in range(46)]
-DUST = [(rng.randrange(W),rng.randrange(120,165),rng.choice([C["cyan"],C["ice"],C["steel"])) for _ in range(20)]
+DUST = [(rng.randrange(W),rng.randrange(120,165),rng.choice([C["cyan"],C["ice"],C["steel"]])) for _ in range(20)]
 
 def runner(frame):
     # A hand-built pixel ninja with side-swept silver hair, blue eye, wind scarf and alternating sprint legs.
