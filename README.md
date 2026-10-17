@@ -4,7 +4,10 @@
   <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&weight=400&size=10&duration=3200&pause=900&color=A9F06D&center=true&vCenter=true&width=720&height=54&lines=FRONTEND+IN+PROGRESS...;BACKEND+IS+THE+NEXT+LEVEL;NO+RUSH.+JUST+KEEP+BUILDING." alt="Animated pixel-style intro" />
 </div>
 
-
+<!-- Animated pixel ninja companion -->
+<div align="center">
+  <img src="./assets/ninja-pixel-patrol.gif" width="100%" alt="Animated pixel ninja patrol: walking across the profile, jumping, turning around, and running back" />
+</div>
 
 <table>
   <tr>
